@@ -12,6 +12,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
+      # Implement OpenAI logic
+      # Add helper?
       redirect_to @post
     else
       render 'new'
